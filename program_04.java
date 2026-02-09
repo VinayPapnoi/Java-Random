@@ -5,12 +5,12 @@ public class program_04 {;
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        System.out.print("The number is ");
-        if(a%2==0){
-            System.out.println("even");
-        }
-        else{
-            System.out.println("Odd");
-        }
+        int b=sc.nextInt();
+        System.out.println("the numbers were "+ a + " "+ b);
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("the numbers are now "+ a + " "+ b);
+        
     }
 }
